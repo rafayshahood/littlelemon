@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './contactForm.css';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import { Route } from 'react-router-dom';
+import ReservationEnd from '../reservationEnd';
 
 const ContactForm = () => {
   const [submitted, setSubmitted] = useState(false);
@@ -70,7 +71,7 @@ const ContactForm = () => {
             </button>
 
             {submitted && (
-              <Route path="/reservationEnd">
+              <Route path="/reservationEnd" element={ReservationEnd}>
                 {({ history }) => {
                   history.push('/restaurantEnd');
                   return null;
