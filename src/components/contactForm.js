@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import './contactForm.css';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
-import { Route } from 'react-router-dom';
-import ReservationEnd from '../reservationEnd';
+import { useNavigate } from 'react-router-dom';
 
 const ContactForm = () => {
   const [submitted, setSubmitted] = useState(false);
+  const navigate = useNavigate();
 
   return (
     <div className='contact-form'>
@@ -71,13 +71,8 @@ const ContactForm = () => {
             </button>
 
             {submitted && (
-              <Route path="/reservationEnd" element={ReservationEnd}>
-                {({ history }) => {
-                  history.push('/restaurantEnd');
-                  return null;
-                }}
-              </Route>
-            )}
+              navigate('/reservationEnd')
+          )}
           </Form>
         )}
       </Formik>

@@ -1,0 +1,47 @@
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d9d9d9;
+    padding-left: 10rem;
+    padding-right: 5rem;
+    padding-bottom: 1rem;
+  }
+  
+  .footer__logo img {
+    height: 100px;
+    width: 100px;
+    margin-left: 100px;
+  }
+  
+  .footer__column {
+    width: calc(25% - 2rem);
+    margin: 0 1rem;
+  }
+  
+  /* Add negative margin to the last three columns */
+  .footer__column:not(:first-child) {
+    padding-left: -100rem;
+    padding-right: -100rem;
+  
+  }
+  
+  .footer__column-heading {
+    font-size: 20px;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+  }
+  
+  .footer__column-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-weight: normal;
+  }
+  
+  .footer__column-list li {
+    margin-bottom: 0.5rem;
+  }
+  
