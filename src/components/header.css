@@ -1,0 +1,33 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #ffffff; /* Change to a desired background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box-shadow for depth */
+    height:100px
+
+  }
+  
+  .logo {
+    margin-left: 270px;
+  }
+  
+  .navbar {
+    display: flex;
+    gap: 1.5rem; /* Increase the gap between nav items */
+    margin-right: 270px;
+  }
+  
+  .nav-item {
+    color: #000000;
+    text-decoration: none;
+    font-family: 'karl', sans-serif;
+    font-size: 1.1rem; /* Increase the font size for better readability */
+    font-weight: 500; /* Adjust the font weight for better readability */
+  }
+  
+  .nav-item:hover {
+    color: #F4CE14;
+  }
+  

@@ -1,0 +1,30 @@
+.reserve-table-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    background-color: #495E57;
+    height:329px
+  }
+
+  .content {
+    flex: 1;
+    text-align: center;
+    color: #F4CE14;
+    font-family: 'karl', sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    font-weight: 500px;
+    margin-left: 100px;
+  }
+
+  .image-container {
+    flex: 1;
+
+  }
+
+  .image-container img {
+    width: 317px;
+    height: 189px;
+    border-radius: 16px;
+  }
